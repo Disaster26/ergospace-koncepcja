@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ERGOSPACE - meble biurowe i aranżacja biur w Warszawie</title>
+<meta name="description" content="ERGOSPACE Meble biurowe, Warszawa: meble gabinetowe, pracownicze, konferencyjne, lady recepcyjne i fotele. Pomiar, aranżacja, dostawa, montaż i serwis. Tel. 22 215 76 06.">
+<meta name="theme-color" content="#FF5A00">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-480.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-640.webp 640w, img/hero-1000.webp 1000w, img/hero-1600.webp 1600w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Jost fb";src:local("Arial"),local("ArialMT");size-adjust:96%}
+:root{--o:#FF5A00;--o2:#FE6E20;--od:#C44200;--k:#262626;--g:#323232;--t:#1C1C1C;--s:#5A5F66;--sz:#F1F3F5;--l:#DCE0E5;--hh:72px;--gut:clamp(16px,3.4vw,60px);--w:1320px;
+--fala:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 14'%3E%3Cpath d='M0 3c20 0 22 8 48 8s28-8 48-8' fill='none' stroke='%23FF5A00' stroke-width='3'/%3E%3C/svg%3E")}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Jost,"Jost fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.6;color:var(--t);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:600;line-height:1.06;letter-spacing:-.015em}
+h1{font-size:clamp(36px,4.2vw,72px)}
+h2{font-size:clamp(31px,3.3vw,52px)}
+h3{font-size:22px;line-height:1.2;font-weight:600;letter-spacing:-.005em}
+p{margin:0}
+.wrap{width:min(var(--w),100% - 2*var(--gut));margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:16px;background:var(--g);color:#fff;font:600 19px/1.2 inherit;font-family:inherit;text-decoration:none;padding:19px 24px;border:0;border-radius:0;cursor:pointer;transition:background .2s,transform .15s}
+.btn:hover{background:#000}
+.btn:active{transform:translateY(1px)}
+.btn i{display:block;width:22px;height:10px;position:relative;flex:none}
+.btn i:before{content:"";position:absolute;left:0;right:2px;top:4px;height:2px;background:currentColor}
+.btn i:after{content:"";position:absolute;right:1px;top:0;width:8px;height:8px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg)}
+.btn.or{background:var(--o);color:var(--t)}
+.btn.or:hover{background:var(--o2)}
+.fala{display:block;width:96px;height:14px;background:var(--fala) no-repeat left center/96px 14px}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;transition:box-shadow .2s}
+.top.sc{box-shadow:0 1px 0 var(--l),0 8px 24px rgba(20,20,20,.06)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:28px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--g);flex:none}
+.logo svg{width:44px;height:44px;flex:none}
+.logo b{display:block;font-size:30px;font-weight:400;letter-spacing:.005em;line-height:.9}
+.logo small{display:block;font-size:15px;font-weight:400;color:#6B6B6B;line-height:1;margin-top:3px;letter-spacing:.01em}
+.menu{display:flex;gap:4px;margin-left:auto}
+.menu a{position:relative;text-decoration:none;font-weight:500;font-size:17px;padding:10px 14px;color:var(--t)}
+.menu a:after{content:"";position:absolute;left:14px;right:14px;bottom:2px;height:3px;background:var(--o);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.menu a:hover:after,.menu a.on:after{transform:scaleX(1)}
+.top .tel{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:18px;color:#fff;background:var(--g);padding:12px 18px;white-space:nowrap}
+.top .tel:hover{background:#000}
+.top .tel svg{width:18px;height:18px}
+.burger{display:none;margin-left:auto;width:48px;height:48px;border:0;background:var(--sz);cursor:pointer;padding:0;align-items:center;justify-content:center}
+.burger i{display:block;width:20px;height:2px;background:var(--t);position:relative;transition:background .2s}
+.burger i:before,.burger i:after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--t);transition:transform .25s}
+.burger i:before{top:-6px}.burger i:after{top:6px}
+.top.open .burger i{background:transparent}
+.top.open .burger i:before{transform:translateY(6px) rotate(45deg)}
+.top.open .burger i:after{transform:translateY(-6px) rotate(-45deg)}
+
+/* pierwszy ekran: kwadrat ze znaku na zdjeciu */
+.hero{position:relative;min-height:calc(100svh - var(--hh));display:flex;align-items:flex-end;background:#3a3a3a;overflow:hidden}
+.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.kw{position:relative;z-index:2;background:var(--o);color:var(--t);width:min(800px,50vw);margin:0 0 clamp(28px,4.5vw,72px) max(var(--gut),(100vw - var(--w))/2);padding:clamp(30px,3.4vw,56px) clamp(118px,9vw,150px) clamp(30px,3.4vw,52px) clamp(26px,3.2vw,52px);overflow:hidden}
+.kw .s{position:absolute;top:0;right:0;width:clamp(96px,8vw,128px);height:100%;pointer-events:none}
+.kw h1{color:#fff}
+.kw .lead{font-size:clamp(18px,1.3vw,21px);line-height:1.5;margin-top:22px;max-width:28em}
+.kw .cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:30px}
+.kw .info{font-size:17px;line-height:1.35}
+.kw .info a{font-weight:600;text-decoration:none;white-space:nowrap}
+.kw .info a:hover{text-decoration:underline}
+
+/* sekcje */
+section{padding:clamp(64px,8vw,124px) 0}
+.sz{background:var(--sz)}
+.hd{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 48px;margin-bottom:clamp(30px,3.6vw,52px)}
+.hd h2+.fala{margin-top:18px}
+.hd p{max-width:34em;color:var(--s);font-size:18.5px}
+.hd .nav{display:flex;gap:8px}
+.nav button{width:52px;height:52px;border:1px solid var(--l);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s}
+.nav button:hover{background:var(--o);border-color:var(--o)}
+.nav button span{display:block;width:11px;height:11px;border-top:2px solid var(--t);border-right:2px solid var(--t);transform:rotate(45deg);margin-left:-4px}
+.nav button[data-k="-1"] span{transform:rotate(-135deg);margin:0 -4px 0 0}
+
+/* oferta - tor kart */
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*22px)/4);gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+.tor.drag a{pointer-events:none}
+.karta{scroll-snap-align:start;background:#fff;user-select:none;text-decoration:none;display:block;position:relative}
+.karta .foto{aspect-ratio:4/3;overflow:hidden;background:#e6e9ec}
+.karta .foto img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.karta:hover .foto img{transform:scale(1.04)}
+.karta .tx{padding:20px 22px 24px;border-top:3px solid transparent;transition:border-color .25s}
+.karta:hover .tx{border-top-color:var(--o)}
+.karta p{margin-top:8px;color:var(--s);font-size:16.5px;line-height:1.5}
+
+/* ciemna: droga S */
+.dk{background:var(--k);color:#fff;position:relative;overflow:hidden}
+.dk .hd p{color:rgba(255,255,255,.76)}
+.droga{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:0 clamp(20px,2.6vw,44px);padding-top:66px}
+.droga svg.w{position:absolute;left:0;top:0;width:100%;height:56px;overflow:visible}
+.etap{position:relative}
+.etap:before{content:"";position:absolute;top:-52px;z-index:1;left:0;width:26px;height:26px;background:var(--o)}
+.etap h3{font-size:24px}
+.etap p{margin-top:10px;color:rgba(255,255,255,.8);font-size:17px}
+.dodatkowo{margin-top:clamp(40px,4.4vw,64px);padding-top:28px;border-top:1px solid rgba(255,255,255,.16);display:grid;grid-template-columns:1fr 1fr;gap:20px clamp(24px,4vw,64px);font-size:17px;color:rgba(255,255,255,.82)}
+.dodatkowo b{display:block;color:#fff;font-size:19px;font-weight:600;margin-bottom:4px}
+
+/* ergonomia */
+.erg{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,104px);align-items:center}
+.erg .ph{position:relative}
+.erg .ph img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.erg .ph:after{content:"";position:absolute;left:-14px;bottom:-14px;width:96px;height:96px;background:var(--o);z-index:-1}
+.erg ul{list-style:none;margin:26px 0 0;padding:0}
+.erg li{padding:15px 0 15px 34px;border-top:1px solid var(--l);position:relative;font-size:17.5px}
+.erg li:last-child{border-bottom:1px solid var(--l)}
+.erg li:before{content:"";position:absolute;left:0;top:24px;width:12px;height:12px;background:var(--o)}
+.erg li b{font-weight:600}
+.express{margin-top:clamp(56px,6vw,96px);background:var(--o);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px clamp(24px,3vw,48px);padding:clamp(26px,3vw,44px) clamp(24px,3.4vw,56px);position:relative;overflow:hidden}
+.express .big{font-size:clamp(64px,6vw,96px);font-weight:600;line-height:.8;color:#fff;letter-spacing:-.03em}
+.express .big small{display:block;color:var(--t);font-size:22px;letter-spacing:0;margin-top:8px;line-height:1}
+.express h3{font-size:clamp(23px,2vw,30px)}
+.express p{margin-top:6px;font-size:17.5px}
+
+/* kontakt */
+.kon{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(36px,5vw,88px);align-items:start}
+.dane{font-size:18px}
+.dane .blk{padding:18px 0;border-top:1px solid var(--l)}
+.dane .blk:first-of-type{border-top:0;padding-top:0}
+.dane span{display:block;font-size:15px;color:var(--s)}
+.dane a{font-weight:600;text-decoration:none;font-size:21px}
+.dane a:hover{color:var(--od)}
+.dane .uw{font-size:16px;color:var(--s);margin-top:4px}
+.mapa{margin-top:26px;aspect-ratio:16/10;background:#e2e6ea;position:relative}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+form{background:#fff;padding:clamp(24px,3vw,44px)}
+form h3{font-size:26px;margin-bottom:6px}
+form .pd{color:var(--s);font-size:16.5px;margin-bottom:18px}
+label{display:block;font-size:15.5px;font-weight:500;margin:16px 0 6px}
+input,select,textarea{width:100%;font:inherit;font-size:17px;padding:13px 14px;border:1px solid #C9CED5;border-radius:0;background:#fff;color:var(--t)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--o);outline-offset:-1px;border-color:var(--o)}
+textarea{min-height:120px;resize:vertical}
+form .btn{margin-top:22px;width:100%;justify-content:center}
+.msg{margin-top:12px;font-size:15.5px;color:var(--s);min-height:1.4em}
+
+/* stopka */
+footer{background:#fff;border-top:1px solid var(--l);padding:44px 0 28px;font-size:16px;color:#4b5057}
+.st{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px 40px}
+.st b{display:block;color:var(--t);font-weight:600;margin-bottom:6px}
+.st a{text-decoration:none}
+.st a:hover{color:var(--od)}
+.st ul{list-style:none;margin:0;padding:0}
+.st li{padding:2px 0}
+.dol{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;margin-top:32px;padding-top:20px;border-top:1px solid var(--l);font-size:15px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1180px){
+ .tor{grid-auto-columns:calc((100% - 2*22px)/3)}
+ .menu a{padding:10px 10px;font-size:16.5px}
+}
+@media (max-width:980px){
+ .menu{display:none;position:absolute;left:0;right:0;top:var(--hh);flex-direction:column;background:#fff;padding:8px var(--gut) 20px;box-shadow:0 18px 30px rgba(20,20,20,.12);gap:0}
+ .top.open .menu{display:flex}
+ .menu a{font-size:21px;padding:15px 0;border-bottom:1px solid var(--l)}
+ .menu a:after{left:0;right:auto;width:40px;bottom:-1px}
+ .burger{display:flex}
+ .top .tel{order:2}
+ .droga{grid-template-columns:1fr 1fr;gap:44px 32px;padding-top:0}
+ .droga svg.w{display:none}
+ .etap{padding-top:44px}
+ .etap:before{top:0}
+ .erg,.kon{grid-template-columns:1fr}
+ .express{grid-template-columns:auto 1fr}
+ .express .btn{grid-column:1/-1;justify-self:start}
+}
+@media (max-width:760px){
+ :root{--hh:64px}
+ body{font-size:17px}
+ .logo svg{width:38px;height:38px}
+ .logo b{font-size:25px}
+ .logo small{font-size:13px}
+ .top .wrap{gap:10px}
+ .top .tel{padding:0;width:48px;height:48px;justify-content:center;margin-left:auto}
+ .top .tel span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+ .burger{margin-left:0}
+ .hero{flex-direction:column;align-items:stretch;background:#fff}
+ .hero picture{position:relative;flex:1 1 auto;min-height:200px;display:block}
+ .hero picture img{object-position:50% 60%}
+ .kw{width:auto;margin:-40px 12px 12px;padding:26px 66px 26px 22px}
+ .kw .s{width:58px}
+ .kw .lead{margin-top:14px;font-size:17px}
+ .kw .cta{margin-top:24px;gap:12px}
+ .kw .btn{width:100%;justify-content:space-between}
+ .tor{grid-auto-columns:82%;gap:14px}
+ .hd .nav{display:none}
+ .droga{grid-template-columns:1fr;gap:34px}
+ .dodatkowo{grid-template-columns:1fr}
+ .erg .ph:after{left:-8px;bottom:-8px;width:64px;height:64px}
+ .express{grid-template-columns:1fr}
+ .st{grid-template-columns:1fr 1fr}
+ .st .f1{grid-column:1/-1}
+}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+ <div class="wrap">
+  <a class="logo" href="#start">
+   <svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF5A00"/><stop offset="1" stop-color="#FE6E20"/></linearGradient><clipPath id="lc"><rect width="48" height="48"/></clipPath></defs><rect width="48" height="48" fill="url(#lg)"/><path clip-path="url(#lc)" d="M15 -2C3 9 7 20 22 26S43 37 32 50" fill="none" stroke="#fff" stroke-width="5.5"/></svg>
+   <span><b>ergospace</b><small>meble biurowe</small></span>
+  </a>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#oferta">Oferta</a>
+   <a href="#wspolpraca">Współpraca</a>
+   <a href="#ergonomia">Ergonomia</a>
+   <a href="#express">Oferta Express</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48222157606"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h4l1.6 4.4-2.4 1.6a12 12 0 0 0 5.8 5.8l1.6-2.4L21 14v4a3 3 0 0 1-3 3A15 15 0 0 1 3 6a3 3 0 0 1 3-3z"/></svg><span>22 215 76 06</span></a>
+  <button class="burger" id="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+ </div>
+</header>
+
+<main id="start">
+<section class="hero" style="padding:0">
+ <picture>
+  <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w" sizes="100vw">
+  <img src="img/hero-1600.webp" srcset="img/hero-640.webp 640w, img/hero-1000.webp 1000w, img/hero-1600.webp 1600w" sizes="100vw" width="1600" height="1000" fetchpriority="high" decoding="async" alt="Biuro typu open space z biurkami z regulacją wysokości i fotelami z pomarańczowymi siedziskami">
+ </picture>
+ <div class="kw">
+  <svg class="s" viewBox="0 0 120 400" preserveAspectRatio="none" aria-hidden="true"><path d="M58 -10C10 70 20 150 70 205S118 330 74 410" fill="none" stroke="#fff" stroke-width="12" vector-effect="non-scaling-stroke"/></svg>
+  <h1>Meble biurowe i aranżacja biur w Warszawie</h1>
+  <p class="lead">Mierzymy pomieszczenia, przygotowujemy warianty aranżacji, dostarczamy i montujemy meble - od recepcji i gabinetów po open space i salę konferencyjną.</p>
+  <div class="cta">
+   <a class="btn" href="#kontakt">Zapytaj o wycenę <i></i></a>
+   <p class="info">albo zadzwoń: <a href="tel:+48222157606">22 215 76 06</a></p>
+  </div>
+ </div>
+</section>
+
+<section class="sz" id="oferta">
+ <div class="wrap">
+  <div class="hd">
+   <div><h2>Wyposażenie każdego pomieszczenia w biurze</h2><span class="fala"></span></div>
+   <div class="nav" aria-label="Przewijanie oferty"><button type="button" data-k="-1" aria-label="Poprzednie"><span></span></button><button type="button" data-k="1" aria-label="Następne"><span></span></button></div>
+  </div>
+  <div class="tor" id="tor">
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/gabinet-400.webp" srcset="img/gabinet-400.webp 400w, img/gabinet-560.webp 560w, img/gabinet-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Gabinet z biurkiem dyrektorskim i szafami w ciemnym drewnie"></div><div class="tx"><h3>Meble gabinetowe</h3><p>Klasyczne i nowoczesne zestawy, w okleinie naturalnej i melaminie.</p></div></a>
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/pracownicze-400.webp" srcset="img/pracownicze-400.webp 400w, img/pracownicze-560.webp 560w, img/pracownicze-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Białe biurka pracownicze w open space"></div><div class="tx"><h3>Meble pracownicze</h3><p>Biurka do open space, szafy, regały i kontenery, także biurka regulowane.</p></div></a>
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/konferencyjne-400.webp" srcset="img/konferencyjne-400.webp 400w, img/konferencyjne-560.webp 560w, img/konferencyjne-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Stół konferencyjny z fotelami w sali z ceglaną ścianą"></div><div class="tx"><h3>Stoły konferencyjne</h3><p>Stoły stałe, mobilne na kółkach i składane, mediaporty i ekrany.</p></div></a>
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/recepcja-400.webp" srcset="img/recepcja-400.webp 400w, img/recepcja-560.webp 560w, img/recepcja-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Drewniana lada recepcyjna z podświetleniem"></div><div class="tx"><h3>Lady recepcyjne</h3><p>Płytowe, fornirowane i nowoczesne - ze szkłem i oświetleniem LED.</p></div></a>
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/fotele-gab-400.webp" srcset="img/fotele-gab-400.webp 400w, img/fotele-gab-560.webp 560w, img/fotele-gab-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Dwa skórzane fotele gabinetowe"></div><div class="tx"><h3>Fotele gabinetowe</h3><p>Skórzane i tapicerowane fotele do gabinetu i sali zarządu.</p></div></a>
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/fotele-prac-400.webp" srcset="img/fotele-prac-400.webp 400w, img/fotele-prac-560.webp 560w, img/fotele-prac-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Ergonomiczne fotele obrotowe przy biurkach"></div><div class="tx"><h3>Fotele pracownicze</h3><p>Ergonomiczne fotele obrotowe z szerokim zakresem regulacji.</p></div></a>
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/krzesla-400.webp" srcset="img/krzesla-400.webp 400w, img/krzesla-560.webp 560w, img/krzesla-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Krzesła konferencyjne na płozie i na nogach"></div><div class="tx"><h3>Krzesła konferencyjne</h3><p>Z pulpitem i sztaplowane, łatwe do przechowania.</p></div></a>
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/kanapy-400.webp" srcset="img/kanapy-400.webp 400w, img/kanapy-560.webp 560w, img/kanapy-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Sofa i fotel wypoczynkowy do strefy recepcji"></div><div class="tx"><h3>Kanapy i fotele</h3><p>Siedziska do recepcji i gabinetu: sofy, fotele, pufy, zestawy modułowe.</p></div></a>
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/scianki-400.webp" srcset="img/scianki-400.webp 400w, img/scianki-560.webp 560w, img/scianki-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Ścianki działowe między biurkami w biurze"></div><div class="tx"><h3>Ścianki i panele</h3><p>Ścianki działowe, panele między biurka i meble akustyczne do open space.</p></div></a>
+   <a class="karta" href="#kontakt"><div class="foto"><img src="img/metalowe-400.webp" srcset="img/metalowe-400.webp 400w, img/metalowe-560.webp 560w, img/metalowe-720.webp 720w" sizes="(max-width:760px) 76vw, (max-width:1180px) 31vw, 320px" width="400" height="300" loading="lazy" decoding="async" alt="Metalowe szafy biurowe i szafki BHP"></div><div class="tx"><h3>Meble metalowe</h3><p>Szafy biurowe, szafy na akta i szafki BHP.</p></div></a>
+  </div>
+ </div>
+</section>
+
+<section class="dk" id="wspolpraca">
+ <div class="wrap">
+  <div class="hd">
+   <div><h2>Biuro ułożone od pomiaru do montażu</h2><span class="fala"></span></div>
+   <p>Jedna firma prowadzi całe wyposażenie: od pierwszej rozmowy, przez aranżację i montaż, po serwis.</p>
+  </div>
+  <div class="droga">
+   <svg class="w" viewBox="0 0 1000 56" preserveAspectRatio="none" aria-hidden="true"><path d="M10 27C90 0 190 54 268 27S447 0 527 27 705 54 785 27 940 0 1000 18" fill="none" stroke="#fff" stroke-width="3" vector-effect="non-scaling-stroke" opacity=".9"/></svg>
+   <div class="etap"><h3>Rozmowa i wycena</h3><p>Ustalamy potrzeby, liczbę stanowisk i budżet, a potem przygotowujemy wycenę.</p></div>
+   <div class="etap"><h3>Pomiar i aranżacja</h3><p>Mierzymy pomieszczenia i przygotowujemy kilka wariantów aranżacji. Przy zakupie mebli wizualizacja wnętrza jest bezpłatna.</p></div>
+   <div class="etap"><h3>Dostawa i montaż</h3><p>Meble przywozi i składa nasz zespół montażystów.</p></div>
+   <div class="etap"><h3>Serwis</h3><p>Produkty są objęte gwarancją, zapewniamy też serwis pogwarancyjny.</p></div>
+  </div>
+  <div class="dodatkowo">
+   <p><b>Remont biura</b>Ścianki działowe, malowanie, oświetlenie oraz układanie i wymiana wykładziny.</p>
+   <p><b>Przeprowadzka</b>Demontaż i montaż mebli, przewóz sprzętu i dokumentów, kartony i folie.</p>
+  </div>
+ </div>
+</section>
+
+<section id="ergonomia">
+ <div class="wrap">
+  <div class="erg">
+   <div class="ph"><img src="img/drive-720.webp" srcset="img/drive-400.webp 400w, img/drive-560.webp 560w, img/drive-720.webp 720w" sizes="(max-width:980px) 92vw, 640px" width="720" height="540" loading="lazy" decoding="async" alt="Biurko z elektryczną regulacją wysokości i fotel ergonomiczny"></div>
+   <div>
+    <h2>Stanowisko dopasowane do człowieka</h2><span class="fala" style="margin-top:18px"></span>
+    <p style="margin-top:22px;color:var(--s);font-size:18.5px">Przy biurku spędzamy dużą część dnia, dlatego dobieramy meble tak, żeby dbały o kręgosłup, wzrok i samopoczucie.</p>
+    <ul>
+     <li><b>Biurka z regulacją wysokości</b> - ręczną w zakresie 68-85 cm albo elektryczną do 120 cm, do pracy na siedząco i na stojąco.</li>
+     <li><b>Fotele z szerokim zakresem regulacji</b> - dopasowane do osób o różnym wzroście i wadze.</li>
+     <li><b>Rozmieszczenie zgodne z ergonomią</b> - planujemy stanowiska już na etapie aranżacji.</li>
+    </ul>
+   </div>
+  </div>
+  <div class="express" id="express">
+   <div class="big">5 dni<small>z dostawą</small></div>
+   <div><h3>Oferta Express</h3><p>Meble biurowe w 5 dni z dostawą na terenie Warszawy. Zapytaj, które modele są dostępne od ręki.</p></div>
+   <a class="btn" href="#kontakt">Zapytaj o szczegóły <i></i></a>
+  </div>
+ </div>
+</section>
+
+<section class="sz" id="kontakt">
+ <div class="wrap">
+  <div class="hd"><div><h2>Porozmawiajmy o Państwa biurze</h2><span class="fala"></span></div></div>
+  <div class="kon">
+   <div class="dane">
+    <div class="blk"><span>Telefon</span><a href="tel:+48222157606">22 215 76 06</a><br><a href="tel:+48222252683">22 225 26 83</a></div>
+    <div class="blk"><span>E-mail</span><a href="mailto:biuro@ergospace.pl">biuro@ergospace.pl</a></div>
+    <div class="blk"><span>Biuro</span>ul. Jagiellońska 78, 03-301 Warszawa<p class="uw">Często jesteśmy u klientów, dlatego przed wizytą w biurze prosimy o telefon.</p></div>
+    <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Jagiello%C5%84ska+78,+03-301+Warszawa&amp;output=embed"></div>
+   </div>
+   <form id="form" novalidate>
+    <h3>Zapytanie o wycenę</h3>
+    <p class="pd">Napisz, co chcesz urządzić - odezwiemy się z propozycją.</p>
+    <label for="f1">Imię i nazwisko / firma</label><input id="f1" name="n" autocomplete="name">
+    <label for="f2">Telefon lub e-mail</label><input id="f2" name="k" autocomplete="email">
+    <label for="f3">Czego dotyczy zapytanie</label>
+    <select id="f3" name="t"><option>Całe biuro</option><option>Open space - stanowiska pracy</option><option>Gabinet</option><option>Recepcja</option><option>Sala konferencyjna</option><option>Fotele i krzesła</option><option>Remont lub przeprowadzka</option></select>
+    <label for="f4">Wiadomość</label><textarea id="f4" name="w" placeholder="Np. metraż, liczba stanowisk, termin"></textarea>
+    <button class="btn or" type="submit">Wyślij zapytanie <i></i></button>
+    <p class="msg" id="msg" role="status"></p>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="st">
+   <div class="f1"><b>ERGOSPACE Meble biurowe</b>ul. Jagiellońska 78, 03-301 Warszawa<br><a href="tel:+48222157606">22 215 76 06</a>, <a href="tel:+48222252683">22 225 26 83</a><br><a href="mailto:biuro@ergospace.pl">biuro@ergospace.pl</a></div>
+   <div><b>Oferta</b><ul><li><a href="#oferta">Meble gabinetowe</a></li><li><a href="#oferta">Meble pracownicze</a></li><li><a href="#oferta">Lady recepcyjne</a></li><li><a href="#oferta">Fotele i krzesła</a></li></ul></div>
+   <div><b>Firma</b><ul><li><a href="#wspolpraca">Współpraca</a></li><li><a href="#ergonomia">Ergonomia</a></li><li><a href="#express">Oferta Express</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+  </div>
+  <div class="dol">
+   <span>&copy; <span id="rok">2026</span> ERGOSPACE Meble biurowe</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=ergospace.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
